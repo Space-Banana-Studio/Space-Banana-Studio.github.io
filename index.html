@@ -24,6 +24,7 @@
 					<header id="header">
 						<h1>Galera Studios</h1>
 						<p>Game Studio &nbsp;&bull;&nbsp; 2 devs &nbsp;&bull;&nbsp; Based in Italy</p>
+						
 						<nav>
 							<ul>
 								<li><a href="https://galerastudios.itch.io/" class="icon brands fa-itch-io"><span class="label">Itch</span></a></li>
@@ -33,7 +34,21 @@
 								<li><a href="mailto:spacebananagms@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
 						</nav>
+						<p id="days"></p>
 					</header>
+					<!--Add a small counter of days since 12th december 2024 with js implementation-->
+					<script>
+						var countDownDate = new Date("Nov 30, 2024 00:00:00").getTime();
+						var x = setInterval(function() {
+							var now = new Date().getTime();
+							var distance = now - countDownDate ;
+							var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+							document.getElementById("days").innerHTML = days + " days since the Pandoro incident";
+						}, 1000);
+					</script>
+					<!-- display days -->
+
+					
 
 				<!-- Footer -->
 					<footer id="footer">
